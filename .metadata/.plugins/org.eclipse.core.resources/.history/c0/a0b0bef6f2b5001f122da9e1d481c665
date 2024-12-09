@@ -1,0 +1,20 @@
+package com.example.SpringBootCrud.Service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+
+import com.example.SpringBootCrud.Beans.User;
+import com.example.SpringBootCrud.Repository.UserRepository;
+
+public class UserService {
+	@Autowired
+	private UserRepository userreop;
+	private final BCryptPasswordEncoder passwordencoder = new BCryptPasswordEncoder();
+	
+	
+	public RegisterUser(User user) {
+		user.setPassword(passwordencoder.encode(user.getPassword()));
+		return userreop.save(user);
+	}
+
+}

@@ -1,0 +1,9 @@
+package com.example.SpringBootCrud.Repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.example.SpringBootCrud.Beans.Role;
+
+public interface RoleRepository extends JpaRepository<Role, Integer> {
+
+}

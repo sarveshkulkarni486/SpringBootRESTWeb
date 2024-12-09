@@ -1,0 +1,5 @@
+package com.example.SpringBootCrud.Service;
+
+public interface LoginService {
+
+}

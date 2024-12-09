@@ -1,0 +1,5 @@
+package com.example.SpringBootCrud.Beans;
+
+public class Role {
+
+}

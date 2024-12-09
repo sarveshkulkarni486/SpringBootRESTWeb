@@ -1,0 +1,9 @@
+package com.example.SpringBootCrud.Service;
+
+import com.example.SpringBootCrud.Beans.User;
+
+public interface LoginService {
+
+	void RegisterUser(User user);
+
+}
